@@ -19,6 +19,9 @@ static struct {
     {.ssid = "DAP", .password = "12345678"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
+    {.ssid = "Superman-PC", .password = "12345678"},
+    {.ssid = "Superman-HW", .password = "12345678"},
+    {.ssid = "Superman-NC", .password = "12345678"},
 };
 
 #define WIFI_LIST_SIZE (sizeof(wifi_list) / sizeof(wifi_list[0]))
@@ -40,7 +43,8 @@ static struct {
 
 #define USE_UART_BRIDGE      0
 #define UART_BRIDGE_PORT     1234
-#define UART_BRIDGE_BAUDRATE 74880
+//#define UART_BRIDGE_BAUDRATE 74880
+#define UART_BRIDGE_BAUDRATE 115200
 //
 
 // DO NOT CHANGE
